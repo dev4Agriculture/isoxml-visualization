@@ -62,6 +62,11 @@ const useStyles = makeStyles({
         position: 'absolute',
         bottom: 8,
         textTransform: 'none'
+    },
+    dev4AgLink: {
+        position: 'absolute',
+        bottom: 35,
+        textTransform: 'none'
     }
 })
 
@@ -88,13 +93,17 @@ export function MainPanel() {
                     <Typography variant="h6">or drop it here</Typography>
 
                     <Typography className={classes.privacyNote}>All your data will stay <br/> inside your browser!</Typography>
+                    <Button href="https://www.dev4agriculture.de/unternehmen/#kontakt"
+                            target="_blank" 
+                            size="small"
+                            className={classes.dev4AgLink} ><img src="./logo_dev4Agriculture.png" alt="v4" width="25px" height="25px"/>Get Support</Button>
                     <Button
                         href="https://github.com/aparshin/isoxml-visualization"
                         target="_blank"
                         size="small"
                         startIcon={<GithubIcon />}
                         className={classes.githubLink}
-                    >Project on GitHub</Button>
+                    >Project by Alex Parshin on GitHub</Button>
                 </div>
             )}
             {fileState === ISOXMLFileState.LOADING && (
