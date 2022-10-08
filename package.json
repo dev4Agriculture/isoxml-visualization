@@ -1,10 +1,9 @@
 {
   "name": "isoxml-visualization",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@danmarshall/deckgl-typings": "^4.9.13",
-    "@deck.gl/geo-layers":"8.0.0",
     "@deck.gl/carto": "^8.5.7",
     "@deck.gl/core": "^8.5.7",
     "@deck.gl/layers": "^8.5.7",
